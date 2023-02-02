@@ -47,7 +47,7 @@ void search()
     if(i ==0)
     {
         cout<<"\n\n ========================================== ";
-        cout<<"\n\n DATA IS EMPTY";
+        cout<<"\n\n ***DATA IS EMPTY***";
         cout<<"\n\n ========================================== ";
     }
     else
@@ -84,7 +84,7 @@ void up()
     if(i ==0)
     {
         cout<<"\n\n ========================================== ";
-        cout<<"\n\n DATA IS EMPTY";
+        cout<<"\n\n **** DATA IS EMPTY ****";
         cout<<"\n\n ========================================== ";
     }
     else
@@ -133,7 +133,7 @@ void del()
     if(i ==0)
     {
          cout<<"\n\n ========================================== ";
-        cout<<"\n\n DATA IS EMPTY";
+        cout<<"\n\n **** DATA IS EMPTY ****";
          cout<<"\n\n ========================================== ";
     }
     else
@@ -176,9 +176,9 @@ void show()
     system("cls");
     if(i ==0)
     {
-        cout<<"\n\n ________________";
-        cout<<"\n\n DATA IS EMPTY";
-        cout<<"\n\n ________________";
+        cout<<"\n\n __________________________";
+        cout<<"\n\n **** DATA IS EMPTY ****";
+        cout<<"\n\n __________________________";
 
     }
     else
