@@ -10,6 +10,10 @@ struct Employee
 } E[25], N[11];
 void add()
 {
+    system("CLS");
+    char salary[30];
+
+    
     cout<<"\n\n ========================================== ";
     cout<<"\n\n ADD EMPLOYEE RECORD";
     cout<<"\n\n ========================================== ";
@@ -38,7 +42,7 @@ void add()
 }
 void search()
 {
-    
+    system("CLS");
  
     if(i ==0)
     {
@@ -51,18 +55,17 @@ void search()
         int t_id, found=0;
         cout<<"\n\n ========================================== ";
         cout<<"\n\n ENTER THE ID  FOR SEARCH: ";
-        cout<<"\n\n ========================================== ";
         cin>>t_id;
-        for(int a=0;a<i;a++)
+        for(int x=0;x<i;x++)
         {
-            if(t_id == E[a].id)
+            if(t_id == E[x].id)
             {
                 cout<<"\n\n ========================================== ";
-                cout<<"\n\n EMPLOYEE NAME: " <<E[a].name;
-                cout<<"\n\n EMPLOYEE ADDRESS: " <<E[a].address;
-                cout<<"\n\n EMPLOYEE PHONENUMBER: " <<E[a].phone;
-                cout<<"\n\n EMPLOYEE DEPARTMENT: " <<E[a].department;
-                cout<<"\n\n EMPLOYEE SALARY: " <<E[a].salary;
+                cout<<"\n\n EMPLOYEE NAME: " <<E[x].name;
+                cout<<"\n\n EMPLOYEE ADDRESS: " <<E[x].address;
+                cout<<"\n\n EMPLOYEE PHONENUMBER: " <<E[x].phone;
+                cout<<"\n\n EMPLOYEE DEPARTMENT: " <<E[x].department;
+                cout<<"\n\n EMPLOYEE SALARY: " <<E[x].salary;
                 cout<<"\n\n ========================================== ";
                 found++;
             }
@@ -90,26 +93,24 @@ void up()
         cout<<"\n\n ========================================== ";
         cout<<"\n\n ENTER THE ID FOR UPDATE: ";
         cin>>t_id;
-        cout<<"\n\n ========================================== ";
-        for(int a=0;a<i;a++)
+        for(int x=0;x<i;x++)
         {
-            if(t_id == E[a].id)
+            if(t_id == E[x].id)
             {
                 cout<<"\n\n ========================================== ";
                 cout<<"\n\n ENTER EMPLOYEE NAME: ";
                 cin.ignore();
-                getline(cin, E[a].name);
+                getline(cin, E[x].name);
                 cout<<"\n\n ENTER EMPLOYEE ADDRESS: ";
                 cin.ignore();
-                getline(cin, E[a].address);
+                getline(cin, E[x].address);
                 cout<<"\n\n ENTER EMPLOYEE PHONENUMBER: ";
                 cin>>E[i].phone;
                 cout<<"\n\n ENTER EMPLOYEE DEPARTMENT: ";
                 cin.ignore();
-                getline(cin, E[a].department);
+                getline(cin, E[x].department);
                 cout<<"\n\n ENTER EMPLOYEE SALARY: ";
                 cin>>E[i].salary;
-                cout<<"\n\n ========================================== ";
                 cout<<"\n\n ========================================== ";
                 cout<<"\n\n **** RECORD UPDATE SUCCESSFULLY ****";
                 found++;
@@ -127,6 +128,7 @@ void up()
 }
 void del()
 {
+    system("CLS");
   
     if(i ==0)
     {
@@ -139,13 +141,12 @@ void del()
         int t_id, found=0;
          cout<<"\n\n ========================================== ";
         cout<<"\n\n ENTER THE ID FOR DELETE: ";
-         cout<<"\n\n ========================================== ";
         cin>>t_id;
-        for(int a=0;a<i;a++)
+        for(int x=0;x<i;x++)
         {
-            if(t_id == E[a].id)
+            if(t_id == E[x].id)
             {
-                for(int k=a;k<i-1;k++ )
+                for(int k=x;k<i-1;k++ )
                 {
                     E[k].id = E[k+1].id;
                     E[k].name = E[k+1].name;
@@ -172,23 +173,27 @@ void del()
 }
 void show()
 {
-    
+    system("cls");
     if(i ==0)
     {
+        cout<<"\n\n ________________";
         cout<<"\n\n DATA IS EMPTY";
+        cout<<"\n\n ________________";
+
     }
     else
     {
       
-        for(int a=0;a<i;a++)
+        for(int x=0;x<i;x++)
         {
-                 cout<<"\n\n ========================================== ";
-                cout<<"\n\n EMPLOYEE ID: " <<E[a].id;
-                cout<<"\n\n EMPLOYEE NAME: " <<E[a].name;
-                cout<<"\n\n EMPLOYEE ADDRESS: " <<E[a].address;
-                cout<<"\n\n EMPLOYEE PHONENUMBER: " <<E[a].phone;
-                cout<<"\n\n EMPLOYEE DEPARTMENT: " <<E[a].department;
-                cout<<"\n\n EMPLOYEE SALARY: " <<E[a].salary;
+
+                cout<<"\n\n ========================================== ";
+                cout<<"\n\n EMPLOYEE ID: " <<E[x].id;
+                cout<<"\n\n EMPLOYEE NAME: " <<E[x].name;
+                cout<<"\n\n EMPLOYEE ADDRESS: " <<E[x].address;
+                cout<<"\n\n EMPLOYEE PHONE NUMBER: " <<E[x].phone;
+                cout<<"\n\n EMPLOYEE DEPARTMENT: " <<E[x].department;
+                cout<<"\n\n EMPLOYEE SALARY: " <<E[x].salary;
                 cout<<"\n\n ========================================== ";
                 
         }
@@ -197,6 +202,7 @@ void show()
 }
 main()
 {
+    system("CLS");
     p:
     int choice;
      cout<<"\n\n ========================================== ";
@@ -210,7 +216,7 @@ main()
     cout<<"\n\n 5- SHOW ALL EMPLOYEE";
     cout<<"\n\n 6- EXIT";
      cout<<"\n\n ========================================== ";
-    cout<<"\n\n ENTER YOUR CHOICE ->";
+    cout<<"\n\n ENTER YOUR CHOICE => ";
     cin>>choice;
     switch(choice)
     {
