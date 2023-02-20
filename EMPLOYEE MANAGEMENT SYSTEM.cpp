@@ -97,7 +97,7 @@ void up()
             if(t_id == E[x].id)
             {
                 cout<<"\n\n ========================================== ";
-                cout<<"\n\n ENTER EMPLOYEE FIRSTNAME: ";
+                cout<<"\n\n ENTER EMPLOYEE NAME: ";
                 cin.ignore();
                 getline(cin, E[x].name);
                 cout<<"\n\n ENTER EMPLOYEE ADDRESS: ";
