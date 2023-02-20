@@ -23,8 +23,7 @@ void add()
     cout<<"\n\n ENTER EMPLOYEE NAME: ";
     cin.ignore();
     getline(cin,E[i].name);
-    cout<<"\n\n ENTER EMPLOYEE ADDRESS: ";
-    cin.ignore();
+    cout<<"\n\n ENTER EMPLYOYEE ADDRESS: ";
     getline(cin,E[i].address);
     cout<<"\n\n ENTER EMPLOYEE PHONENUMBER: ";
     cin>>E[i].phone;
@@ -98,19 +97,18 @@ void up()
             if(t_id == E[x].id)
             {
                 cout<<"\n\n ========================================== ";
-                cout<<"\n\n ENTER EMPLOYEE NAME: ";
+                cout<<"\n\n ENTER EMPLOYEE FIRSTNAME: ";
                 cin.ignore();
                 getline(cin, E[x].name);
                 cout<<"\n\n ENTER EMPLOYEE ADDRESS: ";
-                cin.ignore();
                 getline(cin, E[x].address);
                 cout<<"\n\n ENTER EMPLOYEE PHONENUMBER: ";
-                cin>>E[i].phone;
+                cin>>E[x].phone;
                 cout<<"\n\n ENTER EMPLOYEE DEPARTMENT: ";
                 cin.ignore();
                 getline(cin, E[x].department);
                 cout<<"\n\n ENTER EMPLOYEE SALARY: ";
-                cin>>E[i].salary;
+                cin>>E[x].salary;
                 cout<<"\n\n ========================================== ";
                 cout<<"\n\n **** RECORD UPDATE SUCCESSFULLY ****";
                 found++;
@@ -184,7 +182,7 @@ void show()
     else
     {
       
-        for(int x=0;x<i;x++)
+        for(int x=0; x<i; x++)
         {
 
                 cout<<"\n\n ========================================== ";
@@ -245,4 +243,3 @@ main()
     
     goto p;
 }
-
