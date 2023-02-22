@@ -1,0 +1,41 @@
+
+ EMPLOYEE MANAGEMENT SYSTEM
+
+EMPLOYEE MANAGEMENT SYSTEM
+ 1- ADD EMPLOYEE
+ 2- SEARCH EMPLOYEE
+ 3- UPDATE EMPLOYEE
+ 4- DELETE EMPLOYEE
+ 5- SHOW ALL EMPLOYEE
+ 6- EXIT
+ ENTER YOUR CHOICE =>
+
+First you need to choose what do you want to do. For example, you choose 1
+1 is for ADD EMPLOYEE
+First you need to put id for employee
+ENTER EMPLOYEE ID:
+ENTER EMPLOYEE NAME:
+ENTER EMPLYOYEE ADDRESS:
+ENTER EMPLOYEE PHONENUMBER: 
+ENTER EMPLOYEE DEPARTMENT:
+ENTER EMPLOYEE SALARY: 
+And then if you added it already 
+*** EMPLOYEE RECORD INSERTED ***
+
+2 is for SEARCH EMPLOYEE
+You can search an employee by using id
+If there is no record ***DATA IS EMPTY***
+
+3 is for UPDATE EMPLOYEE 
+You can change the name, address, phone number, department ang salary.
+If you’re done in updating **** RECORD UPDATE SUCCESSFULLY ****
+But if the id was not found **** EMPLOYEE NOT FOUND ****
+
+4 is for DELETE EMPLOYEE
+You can delete employee using id also
+
+5 is for SHOW ALL EMPLOYEE
+It will show all the recorded employee that you insert 
+And lastly
+
+6 is for EXIT
